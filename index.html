@@ -35,51 +35,12 @@
   p{ margin: 0 0 16px 0; }
   .container{ max-width: 880px; margin: 0 auto; padding: 0 24px; }
 
-  /* ---------- Co-brand top bar ---------- */
-  .topbar{
-    background:#fff;
-    border-bottom: 1px solid var(--line);
-    padding: 14px 0;
-  }
-  .topbar .row{
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    gap: 16px;
-    flex-wrap: wrap;
-  }
-  .brandmark{
-    display:flex;
-    align-items:center;
-    gap:10px;
-  }
-  .brandmark img{ height: 36px; display:block; }
-  .logo-placeholder{
-    height:36px;
-    min-width: 110px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    padding: 0 10px;
-    border: 1.5px dashed #C9BFAE;
-    border-radius: 8px;
-    font-size: 11px;
-    color:#8a7f6c;
-    font-family:'Inter', sans-serif;
-    text-align:center;
-    background:#FAF7F2;
-  }
-  .topbar-divider{
-    color:#C9BFAE;
-    font-size:13px;
-  }
-
   /* ---------- Hero ---------- */
   .hero{
     position:relative;
     background: linear-gradient(160deg, var(--navy) 0%, var(--navy-soft) 60%, var(--apricot-deep) 130%);
     color:#fff;
-    padding: 64px 0 56px;
+    padding: 48px 0 56px;
     overflow:hidden;
   }
   .hero::before{
@@ -271,21 +232,6 @@
 </head>
 <body>
 
-  <!-- ===== Co-brand strip ===== -->
-  <div class="topbar">
-    <div class="container row">
-      <div class="brandmark">
-        <img src="assets/uc-logo.png" alt="University of Canterbury logo"
-             onerror="this.outerHTML='&lt;div class=&quot;logo-placeholder&quot;&gt;UC MBA logo&lt;br&gt;goes here&lt;/div&gt;'">
-      </div>
-      <span class="topbar-divider">in partnership with</span>
-      <div class="brandmark">
-        <img src="assets/parkrun-logo.png" alt="parkrun logo"
-             onerror="this.outerHTML='&lt;div class=&quot;logo-placeholder&quot;&gt;parkrun logo&lt;br&gt;goes here&lt;/div&gt;'">
-      </div>
-    </div>
-  </div>
-
   <!-- ===== Hero + signup ===== -->
   <header class="hero">
     <div class="container">
@@ -342,7 +288,6 @@
   <footer>
     <div class="container row">
       <span>&copy; 2026 Ashley Suckling &middot; UC MBA Research Project</span>
-      <span>Reviewed &amp; approved by the UC MBA Research Committee, on behalf of the University of Canterbury Human Ethics Committee</span>
     </div>
   </footer>
 
